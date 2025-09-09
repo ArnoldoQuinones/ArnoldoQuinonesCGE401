@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* Arnoldo "Arnie" Quinones
+* Prototype 1
+* Code Description: Adding Trigger Zone Points
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

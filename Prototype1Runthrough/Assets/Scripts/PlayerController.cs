@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* Arnoldo "Arnie" Quinones
+* Prototype 1
+* Code Description: Controls Player Movement
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
