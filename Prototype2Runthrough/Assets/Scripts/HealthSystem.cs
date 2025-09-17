@@ -1,4 +1,9 @@
-﻿//This script is based on https://www.youtube.com/watch?v=3uyolYVsiWc
+﻿/*
+* Arnoldo "Arnie" Quinones
+* Prototype 2
+* Code Description: Indicates Player Health
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

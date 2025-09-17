@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* Arnoldo "Arnie" Quinones
+* Prototype 2
+* Code Description: Generation for Random Animals
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

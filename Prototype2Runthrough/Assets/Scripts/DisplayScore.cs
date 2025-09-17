@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* Arnoldo "Arnie" Quinones
+* Prototype 2
+* Code Description: Adding Player Points
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

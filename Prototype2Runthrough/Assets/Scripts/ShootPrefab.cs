@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* Arnoldo "Arnie" Quinones
+* Prototype 2
+* Code Description: Allows Player to Shoot Food
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
