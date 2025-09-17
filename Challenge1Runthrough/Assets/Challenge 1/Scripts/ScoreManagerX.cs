@@ -1,6 +1,6 @@
 ﻿/*
 * Arnoldo "Arnie" Quinones
-* Prototype 1
+* Challenge 1
 * Code Description: Indicates Player Win or Loss
 */
 

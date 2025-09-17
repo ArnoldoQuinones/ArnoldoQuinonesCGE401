@@ -1,6 +1,6 @@
 ﻿/*
 * Arnoldo "Arnie" Quinones
-* Prototype 1
+* Challenge 1
 * Code Description: Controls Player Movement
 */
 
