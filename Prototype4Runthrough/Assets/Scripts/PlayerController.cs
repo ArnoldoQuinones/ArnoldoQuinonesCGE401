@@ -26,10 +26,15 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         forwardInput = Input.GetAxis("Vertical");
-        
-        //move our powerup indicator to the ground below our player
-        powerupIndicator.transform.position = transform.position + new Vector3(0, -0.5f, 0); 
+        powerupIndicator.transform.position = transform.position + new Vector3(0, -0.5f, 0);
+
+        // Loss condition: fall off platform
+        if (transform.position.y < -10 && GameManager.instance.gameActive)
+        {
+            GameManager.instance.LoseGame();
+        }
     }
+    
     
     private void FixedUpdate()
     {

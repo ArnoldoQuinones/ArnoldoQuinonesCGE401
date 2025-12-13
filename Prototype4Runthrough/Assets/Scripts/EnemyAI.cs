@@ -15,9 +15,13 @@ public class EnemyAI : MonoBehaviour
         enemyRb = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player");
     }
-
+    
+    
+    
     private void FixedUpdate()
     {
+        if (!GameManager.instance.gameActive) return;
+
         //Add force toward the direction from the player to the enemy
         
         //vector for direction from enemy to player (normalized so it is only direction not distance)
@@ -25,5 +29,10 @@ public class EnemyAI : MonoBehaviour
         
         //Add force toward player
         enemyRb.AddForce(lookDirection * speed);
+        
+        if (transform.position.y < -10)
+        {
+            Destroy(gameObject);
+        }
     }
 }
