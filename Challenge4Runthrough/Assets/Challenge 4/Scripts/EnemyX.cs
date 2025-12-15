@@ -12,23 +12,22 @@ public class EnemyX : MonoBehaviour
     void Start()
     {
         enemyRb = GetComponent<Rigidbody>();
-        
         playerGoal = GameObject.Find("Player Goal");
-        
-        SpawnManagerX spawnManager = FindObjectOfType<SpawnManagerX>();
-        if (spawnManager != null)
+
+        if (playerGoal != null)
         {
-            speed = spawnManager.enemySpeed;
+            float distance = Vector3.Distance(transform.position, playerGoal.transform.position);
+
+            int currentWave = 1;
+            if (GameManagerX.instance != null)
+                currentWave = GameManagerX.instance.currentWave;
+
+            float desiredTime = 10f - (currentWave - 1) * 1f;
+            desiredTime = Mathf.Max(desiredTime, 2f);
+
+            Vector3 direction = (playerGoal.transform.position - transform.position).normalized;
+            enemyRb.velocity = direction * (distance / desiredTime);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        // Set enemy direction towards player goal and move there
-        Vector3 lookDirection = (playerGoal.transform.position - transform.position).normalized;
-        enemyRb.AddForce(lookDirection * speed * Time.deltaTime);
-
     }
 
     private void OnCollisionEnter(Collision other)

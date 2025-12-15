@@ -383,7 +383,7 @@ MonoBehaviour:
   enemyCount: 0
   waveCount: 1
   player: {fileID: 583048338}
-  enemySpeed: 5
+  enemySpeed: 0
   speedIncreasePerWave: 0.5
 --- !u!1 &224380464
 GameObject:
